@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { AppHeader } from '~components/app/';
 import { Route, Switch } from 'react-router';
 import getRootNavItemList from '~util/getRootNavItemList';
-import PageHome from '~pages/Home';
+import PageHome from '~pages/PageHome';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import { withRouter } from 'react-router';
 
@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div className="app">
         <AppHeader />
-        <TransitionGroup>
+        <TransitionGroup className="position-relative">
           <CSSTransition key={location.pathname} classNames="fade" timeout={300}>
             <Switch location={location}>
               {getRootNavItemList().map((item, key) => (

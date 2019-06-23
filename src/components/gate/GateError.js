@@ -1,15 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { IconError } from '~components/icon';
-import { Alert } from 'reactstrap';
 
 export const GateError = ({ children, className, error, onRetry }) => {
   if (error) {
     return (
       <div className={`components-gateError gateError ${className}`}>
-        <Alert color="danger">
+        <div className="alert alert-danger">
           <h3 className="my-0"><IconError className="text-danger" />&nbsp;{error}</h3>
-        </Alert>
+        </div>
         {onRetry !== null && (
           <div className="mt-3">
             <button type="button" className="btn btn-primary" onClick={() => onRetry()}>Retry</button>

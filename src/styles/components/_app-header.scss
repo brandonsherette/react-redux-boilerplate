@@ -33,4 +33,22 @@
       color: $color-dark-grey;
     }
   }
+  .navMenu {
+    ul {
+      list-style-type: none;
+      display: flex;
+      margin-left: -2em;
+      margin-right: -2em;
+    }
+    li {
+      margin-left: 2em;
+      margin-right: 2em;
+      a {
+        color: $color-white;
+      }
+      a:hover {
+        color: $color-yellow;
+      }
+    }
+  }
 }

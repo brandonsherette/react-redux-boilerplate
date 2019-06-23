@@ -1,4 +1,4 @@
-import PageHome from '~pages/Home';
+import { PageAbout, PageHome } from '~/pages';
 
 export default function getRootNavItemList() {
   return [
@@ -7,5 +7,10 @@ export default function getRootNavItemList() {
       path: '/',
       component: PageHome,
     },
+    {
+      title: 'About',
+      path: '/about',
+      component: PageAbout,
+    }
   ];
 }
