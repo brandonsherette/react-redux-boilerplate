@@ -1,0 +1,9 @@
+.form-component {
+  &.label {
+    font-weight: 900;
+  }
+
+  &.inputSelect {
+    max-width: 600px;
+  }
+}

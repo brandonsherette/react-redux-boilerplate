@@ -1,0 +1,22 @@
+.containerBox {
+  background: $color-white;
+  border: 1px solid $color-light-grey;
+  border-radius: 4px;
+  padding: 0.25rem;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+
+  input {
+    background-color: $color-off-white;
+  }
+
+  &--dark {
+    background: $color-dark-grey;
+    color: $color-white;
+  }
+
+  &--info {
+    background: $color-primary;
+    color: $color-white;
+  }
+}

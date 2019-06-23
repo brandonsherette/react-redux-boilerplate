@@ -1,0 +1,30 @@
+.fieldset {
+  $header-font-size: 1.5em;
+  $padding: 0.5em;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1em;
+  padding-top: 0.75em;
+
+  &__header {
+    font-size: 1em;
+    position: absolute;
+    top: 0;
+    left: 1em;
+    font-weight: 600;
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    padding-left: $padding;
+    padding-right: $padding;
+  }
+
+  &__box {
+    padding: $padding;
+    border: 1px solid $color-border;
+    background-color: $color-white;
+  }
+
+  &__body {
+    margin-top: 1.5em;
+  }
+}

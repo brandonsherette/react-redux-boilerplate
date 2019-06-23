@@ -1,0 +1,51 @@
+body {
+  background-color: $color-off-white;
+  color: $color-black;
+  font-size: 16px;
+  font-family: 'Roboto', 'Merriweather', 'Montserrat', sans-serif
+}
+
+.app {
+  width: 100%;
+}
+
+.timeout-reminder-heading.header-warning.modal-header {
+  color: #856404;
+  background-color: #fff3cd;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+.w-65 {
+  width: 65% !important;
+}
+
+.btn-group-toggle {
+  .btn-primary:not(.active):not(:hover) {
+    background-color: $color-white;
+    color: $color-primary;
+  }
+}
+
+.btn-default {
+  background-color: $color-light-grey;
+  color: $color-dark-grey;
+}
+
+.d-flex-spacing>* {
+  margin-left: 0.35rem;
+  margin-right: 0.35rem;
+}
+
+.page {
+  margin-bottom: 1rem;
+}
+
+.position-absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,56 @@
+.appSideMenuLayout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 250px auto;
+
+  &__navMenu {
+    background-color: $color-dark-grey;
+    color: $color-white;
+
+    h1 {
+      font-size: 1.25em;
+      background-color: $color-black;
+      text-align: center;
+      padding: 1em;
+      margin-bottom: 0;
+    }
+
+    a,
+    a:visited {
+      color: $color-white;
+      font-size: 1.25em;
+    }
+
+    a.active {
+      background-color: $color-primary;
+    }
+
+    a:visited:hover,
+    a:hover {
+      color: $color-white;
+      text-decoration: none;
+      background-color: $color-yellow;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      li a {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 1em;
+        display: block;
+      }
+    }
+  }
+
+  &__body {
+    padding: 1em;
+
+    &__content {
+      position: relative;
+    }
+  }
+}

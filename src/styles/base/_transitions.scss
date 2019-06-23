@@ -1,0 +1,40 @@
+.fade-enter {
+  /*opacity: 0;
+  z-index: 1;
+  position: relative;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);*/
+  opacity: 0;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-enter-done {
+  position: relative;
+  left: initial;
+  transform: initial;
+}
+
+.fade-exit {
+  /*opacity: 1;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);*/
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+}

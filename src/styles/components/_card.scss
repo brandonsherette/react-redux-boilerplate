@@ -1,0 +1,35 @@
+.card {
+  &.selectableCard {
+    $border-size: 3px;
+    background-color: $color-white;
+    border-width: $border-size;
+    border-style: solid;
+    transition: border-color 400ms ease-in-out;
+    &:hover
+
+    /*:not(.selectableCard--selected)*/
+      {
+      border-color: $color-btn-hover;
+      cursor: pointer;
+    }
+
+    &--selected {
+      border-color: $color-btn-active;
+    }
+
+    .selectableCard__header {
+      display: grid;
+      grid-template-columns: auto 1em;
+      margin: 0;
+      padding: 0;
+
+      .title {
+        text-align: left;
+      }
+
+      .checkbox {
+        text-align: right;
+      }
+    }
+  }
+}

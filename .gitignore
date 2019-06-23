@@ -1,0 +1,9 @@
+mochawesome-report
+node_modules
+npm-debug.log
+.DS_Store
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+public/main.js
+build

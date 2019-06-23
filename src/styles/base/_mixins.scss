@@ -1,0 +1,54 @@
+//#SIZING (max-width(desktop designed first))
+@mixin for-large-and-below {
+  @media(max-width: #{$width-large}) {
+    @content;
+  }
+}
+
+@mixin for-medium-and-below {
+  @media(max-width: #{$width-medium}) {
+    @content;
+  }
+}
+
+@mixin for-medium-height-and-below {
+  @media(max-height: #{$height-medium}) {
+    @content;
+  }
+}
+
+@mixin for-small-and-below {
+  @media(max-width: #{$width-small}) {
+    @content;
+  }
+}
+
+@mixin for-only-xlarge {
+  @media(min-width: #{$width-large + 1}) {
+    @content;
+  }
+}
+
+@mixin for-only-large {
+  @media(min-width: #{$width-medium + 1}) and (max-width: #{$width-large}) {
+    @content;
+  }
+}
+
+@mixin for-only-medium {
+  @media(min-width: #{$width-small + 1}) and (max-width: #{$width-medium}) {
+    @content;
+  }
+}
+
+@mixin for-only-small {
+  @media(min-width: #{$width-xsmall + 1}) and (max-width: #{$width-small}) {
+    @content;
+  }
+}
+
+@mixin for-only-xsmall {
+  @media(max-width: #{$width-xsmall}) {
+    @content;
+  }
+}
