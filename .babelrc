@@ -8,6 +8,7 @@
       "alias": {
         "~": "./src",
         "~components": "./src/components",
+        "~hoc": "./src/hoc",
         "~modules": "./src/modules",
         "~pages": "./src/pages",
         "~util": "./src/util"

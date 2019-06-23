@@ -6,6 +6,7 @@
     "paths": {
       "~/*": ["*"],
       "~components/*": ["components/*"],
+      "~hoc/*": ["hoc/*"],
       "~modules/*": ["modules/*"],
       "~pages/*": ["pages/*"],
       "~util/*": ["util/*"]
